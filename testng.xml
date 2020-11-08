@@ -2,8 +2,27 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test thread-count="5" name="Test">
+   <!--  <groups>
+    <run>
+    <include name="Firefox"></include>
+    </run>
+    </groups> -->
     <classes>
-      <class name="com.testannotations.TestAnnotations"/>
+      <class name="com.extentreports.ExtentReport"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
+
+
+<!-- <suite name="Suite" parallel="methods">
+  <test thread-count="5" name="Test" parallel="methods">
+     <groups>
+    <run>
+    <include name="Firefox"></include>
+    </run>
+    </groups> 
+    <classes>
+      <class name="com.assertions.Assertions"/>
+    </classes>
+  </test>  Test 
+</suite>  Suite -->
